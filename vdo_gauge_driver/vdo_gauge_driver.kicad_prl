@@ -58,7 +58,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "version2.kicad_prl",
+    "filename": "vdo_gauge_driver.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -96,7 +96,7 @@
       103,
       74,
       103,
-      0
+      10
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

@@ -7,6 +7,7 @@
 	(title_block
 		(title "Porsche 996 VDO Vision Oil Tempearature Gauge Driver")
 		(date "2025-05-04")
+		(rev "0.1")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:MCP6002-xP"
@@ -2955,7 +2956,7 @@
 			(uuid "e15d2980-64f0-4642-9e73-6e11028ffc96")
 		)
 		(instances
-			(project "version2"
+			(project "vdo_gauge_driver"
 				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
 					(reference "#PWR05")
 					(unit 1)
@@ -3087,7 +3088,7 @@
 			(uuid "ef003d25-0ced-4aa6-90a3-f1d9a85a99f2")
 		)
 		(instances
-			(project "version2"
+			(project "vdo_gauge_driver"
 				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
 					(reference "J3")
 					(unit 1)
@@ -3224,7 +3225,7 @@
 			(uuid "8a5e7a6e-fb11-45a2-a177-16d3e73f0dfa")
 		)
 		(instances
-			(project "version2"
+			(project "vdo_gauge_driver"
 				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
 					(reference "J4")
 					(unit 1)
@@ -3424,7 +3425,7 @@
 			(uuid "cdfb002e-e7fc-4145-ab8b-d55c80e31683")
 		)
 		(instances
-			(project "version2"
+			(project "vdo_gauge_driver"
 				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
 					(reference "J2")
 					(unit 1)
@@ -3713,7 +3714,7 @@
 			(uuid "dfbdb198-6b48-4808-b00d-7f27a4c2a412")
 		)
 		(instances
-			(project "version2"
+			(project "vdo_gauge_driver"
 				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
 					(reference "#PWR04")
 					(unit 1)
