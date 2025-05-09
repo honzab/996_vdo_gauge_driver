@@ -4261,7 +4261,7 @@
 	)
 	(gr_text "JB 2025"
 		(at 88.5 69 0)
-		(layer "F.Cu")
+		(layer "F.SilkS")
 		(uuid "a3efbac2-74e5-41ac-a4f9-1dedfd9f4dc5")
 		(effects
 			(font
