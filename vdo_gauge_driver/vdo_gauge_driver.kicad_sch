@@ -5,7 +5,7 @@
 	(uuid "5522c6c2-0190-4a1a-827d-62998a7dbe1c")
 	(paper "A4")
 	(title_block
-		(title "Porsche 996 VDO Vision Oil Tempearature Gauge Driver")
+		(title "VDO Vision Oil Tempearature Gauge Driver")
 		(date "2025-05-04")
 		(rev "0.1")
 	)
@@ -2178,6 +2178,12 @@
 		(uuid "4c2a3357-4a9d-4939-b8b2-3aa42939dfb4")
 	)
 	(junction
+		(at 200.66 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69111cbe-5e36-472f-b0f3-27a7528bd1c3")
+	)
+	(junction
 		(at 88.9 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2206,12 +2212,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a27002b7-cc8b-4442-82cf-7c9b3fb70e7a")
-	)
-	(junction
-		(at 205.74 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5f95b5f-2a59-4262-b8cf-2149f77feaad")
 	)
 	(junction
 		(at 36.83 66.04)
@@ -2265,7 +2265,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 82.55) (xy 196.85 82.55)
+			(xy 176.53 82.55) (xy 191.77 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2405,16 +2405,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 82.55) (xy 223.52 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54982a58-befd-4b7f-b670-6854859b1722")
-	)
-	(wire
-		(pts
 			(xy 254 87.63) (xy 254 104.14)
 		)
 		(stroke
@@ -2465,7 +2455,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 82.55) (xy 205.74 82.55)
+			(xy 199.39 82.55) (xy 200.66 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2475,7 +2465,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 104.14) (xy 205.74 104.14)
+			(xy 209.55 104.14) (xy 200.66 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2585,7 +2575,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 92.71) (xy 205.74 104.14)
+			(xy 200.66 92.71) (xy 200.66 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2715,6 +2705,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 82.55) (xy 223.52 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0907772-90da-4485-aea2-e60a49947fcd")
+	)
+	(wire
+		(pts
 			(xy 119.38 88.9) (xy 119.38 107.95)
 		)
 		(stroke
@@ -2815,7 +2815,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 85.09) (xy 205.74 82.55)
+			(xy 200.66 85.09) (xy 200.66 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2852,6 +2852,26 @@
 			(justify left bottom)
 		)
 		(uuid "13cc10ab-41b2-4ea0-a8c6-ae9a5ba1ccdd")
+	)
+	(label "Smoothed Signal Out"
+		(at 203.2 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1753eb88-9635-4fc8-86dd-1aedaf6c1711")
+	)
+	(label "Attiny85 out"
+		(at 180.34 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a3b7d48-1b25-44c6-aeb7-de83751995a9")
 	)
 	(label "Input"
 		(at 109.22 123.19 0)
@@ -3227,7 +3247,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 205.74 88.9 0)
+		(at 200.66 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3236,7 +3256,7 @@
 		(fields_autoplaced yes)
 		(uuid "45bc0c01-0ccb-4493-a0c9-9363b44ded4d")
 		(property "Reference" "C3"
-			(at 209.55 87.6299 0)
+			(at 204.47 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3245,7 +3265,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 209.55 90.1699 0)
+			(at 204.47 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3254,7 +3274,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm"
-			(at 206.7052 92.71 0)
+			(at 201.6252 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3263,7 +3283,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 88.9 0)
+			(at 200.66 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3272,7 +3292,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 205.74 88.9 0)
+			(at 200.66 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3707,7 +3727,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 200.66 82.55 90)
+		(at 195.58 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3715,7 +3735,7 @@
 		(dnp no)
 		(uuid "827ce1e6-f00c-4f91-a57a-9a893c7de72b")
 		(property "Reference" "R1"
-			(at 200.66 76.2 90)
+			(at 195.58 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3723,7 +3743,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 200.66 78.74 90)
+			(at 195.58 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3731,7 +3751,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
-			(at 200.66 84.328 90)
+			(at 195.58 84.328 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3740,7 +3760,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 82.55 0)
+			(at 195.58 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3749,7 +3769,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 200.66 82.55 0)
+			(at 195.58 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)

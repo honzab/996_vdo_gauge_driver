@@ -1,2 +1,3 @@
 vdo_gauge_driver/vdo_gauge_driver-backups/*
 .DS_Store
+*.lck
