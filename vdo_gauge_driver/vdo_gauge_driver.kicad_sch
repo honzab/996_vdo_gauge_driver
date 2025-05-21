@@ -1022,170 +1022,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Potentiometer"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RV"
-				(at -4.445 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Potentiometer"
-				(at -2.54 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Potentiometer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "resistor variable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Potentiometer*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Potentiometer_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Potentiometer_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "MCU_Microchip_ATtiny:ATtiny85-20P"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1540,182 +1376,6 @@
 					(at 7.62 0 180)
 					(length 2.54)
 					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_SPDT"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPDT"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_SPDT_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2438,12 +2098,6 @@
 		(uuid "170f26cb-7675-4930-abd6-0e3c679ada37")
 	)
 	(junction
-		(at 88.9 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1b45e265-948d-44b1-afba-7e0ff60afd81")
-	)
-	(junction
 		(at 29.21 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2486,16 +2140,16 @@
 		(uuid "6f1961aa-65b6-4246-ad28-fdc76de0c2f7")
 	)
 	(junction
-		(at 88.9 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "79840236-b65f-40e1-8607-7e709d5a03e4")
-	)
-	(junction
 		(at 43.18 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "897ea746-289e-4105-8148-7ff67a3c8959")
+	)
+	(junction
+		(at 96.52 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b79a7b6-b78f-4271-b0c8-32dfdc72bef8")
 	)
 	(junction
 		(at 43.18 96.52)
@@ -2522,12 +2176,6 @@
 		(uuid "bfbe569b-6582-4986-a840-dda7c1e87268")
 	)
 	(junction
-		(at 110.49 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d8f7f859-6aa8-4f8d-a4fb-bcb21c53790f")
-	)
-	(junction
 		(at 60.96 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2545,16 +2193,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 92.71) (xy 110.49 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "116a985f-77a0-4fc7-899f-43ed208ef36e")
-	)
-	(wire
-		(pts
 			(xy 167.64 82.55) (xy 191.77 82.55)
 		)
 		(stroke
@@ -2565,36 +2203,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 107.95) (xy 87.63 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14faa504-921b-4e2d-87d8-9d200d66c3ff")
-	)
-	(wire
-		(pts
-			(xy 105.41 128.27) (xy 105.41 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17773dfb-d528-454a-9bce-32b402b3bfa5")
-	)
-	(wire
-		(pts
-			(xy 110.49 66.04) (xy 88.9 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17b6bfd8-2d17-4cae-976e-829385076e2f")
-	)
-	(wire
-		(pts
 			(xy 30.48 68.58) (xy 30.48 96.52)
 		)
 		(stroke
@@ -2602,26 +2210,6 @@
 			(type default)
 		)
 		(uuid "1a92752a-77bc-47cd-8365-70fbc0f23a8f")
-	)
-	(wire
-		(pts
-			(xy 110.49 66.04) (xy 127 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b31f886-c7b9-4fdf-a8e8-4a363a21bf00")
-	)
-	(wire
-		(pts
-			(xy 110.49 96.52) (xy 88.9 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f78afb6-4bfd-44b9-9251-e488a48e8a8d")
 	)
 	(wire
 		(pts
@@ -2645,7 +2233,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 66.04) (xy 88.9 66.04)
+			(xy 81.28 66.04) (xy 96.52 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2675,7 +2263,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 66.04) (xy 88.9 72.39)
+			(xy 96.52 66.04) (xy 96.52 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2725,16 +2313,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 120.65) (xy 95.25 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b5b7c19-05a0-46a3-b8f8-d297018383bc")
-	)
-	(wire
-		(pts
 			(xy 43.18 96.52) (xy 53.34 96.52)
 		)
 		(stroke
@@ -2745,7 +2323,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 87.63) (xy 88.9 96.52)
+			(xy 96.52 87.63) (xy 96.52 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2855,7 +2433,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 134.62) (xy 73.66 134.62)
+			(xy 73.66 123.19) (xy 118.11 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2915,17 +2493,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 88.9) (xy 119.38 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9113eb6-0b5d-4779-9205-8dbb8836fc5d")
-	)
-	(wire
-		(pts
-			(xy 81.28 96.52) (xy 88.9 96.52)
+			(xy 81.28 96.52) (xy 96.52 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3005,16 +2573,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 88.9) (xy 119.38 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3655ac4-acbe-4abf-9922-571f18d74ee4")
-	)
-	(wire
-		(pts
 			(xy 152.4 66.04) (xy 152.4 72.39)
 		)
 		(stroke
@@ -3032,16 +2590,6 @@
 			(type default)
 		)
 		(uuid "c9a21538-e14b-49e1-a646-5205803799a7")
-	)
-	(wire
-		(pts
-			(xy 105.41 123.19) (xy 118.11 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da18088e-36e8-498f-927a-1bacf3775c52")
 	)
 	(wire
 		(pts
@@ -3065,16 +2613,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 107.95) (xy 119.38 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e877a03a-e344-46f4-96e2-7d2e75f28c0c")
-	)
-	(wire
-		(pts
 			(xy 36.83 66.04) (xy 43.18 66.04)
 		)
 		(stroke
@@ -3085,26 +2623,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 120.65) (xy 95.25 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea9cdac7-5de5-49ae-9bbe-74f877b0a788")
-	)
-	(wire
-		(pts
-			(xy 110.49 66.04) (xy 110.49 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb6c2581-72fa-456f-b6f0-50295fbe13dc")
-	)
-	(wire
-		(pts
 			(xy 24.13 68.58) (xy 30.48 68.58)
 		)
 		(stroke
@@ -3112,6 +2630,16 @@
 			(type default)
 		)
 		(uuid "ec987936-6754-478f-b846-83ab22a58627")
+	)
+	(wire
+		(pts
+			(xy 96.52 66.04) (xy 127 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecb2372e-54c7-43f7-8505-58b686f43aa2")
 	)
 	(wire
 		(pts
@@ -3155,16 +2683,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 124.46) (xy 73.66 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcfa145f-c718-49d4-8003-1c8ce9cb2224")
-	)
-	(wire
-		(pts
 			(xy 68.58 82.55) (xy 68.58 96.52)
 		)
 		(stroke
@@ -3172,16 +2690,6 @@
 			(type default)
 		)
 		(uuid "fdaf37c9-a48f-42c9-9b19-7f2ddc55285b")
-	)
-	(label "Testing 0-5V"
-		(at 104.14 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "13cc10ab-41b2-4ea0-a8c6-ae9a5ba1ccdd")
 	)
 	(label "Drain"
 		(at 242.57 90.17 0)
@@ -3254,7 +2762,7 @@
 		(uuid "ee571856-b3f6-4714-abda-ccf43da5e768")
 	)
 	(label "ECU Input"
-		(at 80.01 134.62 0)
+		(at 80.01 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4260,7 +3768,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Socket")
-		(at 68.58 124.46 180)
+		(at 68.58 123.19 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4268,7 +3776,7 @@
 		(dnp no)
 		(uuid "9ba326aa-79ba-488c-a176-0b06ab36adeb")
 		(property "Reference" "J3"
-			(at 69.215 119.38 0)
+			(at 69.215 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4276,7 +3784,7 @@
 			)
 		)
 		(property "Value" "ECU Input"
-			(at 69.215 121.92 0)
+			(at 69.215 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4284,7 +3792,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B1B-XH-AM_1x01_P2.50mm_Vertical"
-			(at 68.58 124.46 0)
+			(at 68.58 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,7 +3801,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 124.46 0)
+			(at 68.58 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,7 +3810,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 68.58 124.46 0)
+			(at 68.58 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4324,7 +3832,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP6002-xP")
-		(at 91.44 80.01 0)
+		(at 99.06 80.01 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4332,7 +3840,7 @@
 		(dnp no)
 		(uuid "9e74f719-9835-4438-873f-21ea1d5da979")
 		(property "Reference" "U3"
-			(at 90.17 78.7399 0)
+			(at 97.79 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4341,7 +3849,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xP"
-			(at 90.17 81.2799 0)
+			(at 97.79 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4350,7 +3858,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 91.44 80.01 0)
+			(at 99.06 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4359,7 +3867,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
-			(at 91.44 80.01 0)
+			(at 99.06 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,7 +3876,7 @@
 			)
 		)
 		(property "Description" "1MHz, Low-Power Op Amp, DIP-8"
-			(at 91.44 80.01 0)
+			(at 99.06 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4550,78 +4058,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 110.49 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c7f89f2e-ef99-4a57-8d46-bd73734305eb")
-		(property "Reference" "RV1"
-			(at 107.95 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "R_Potentiometer"
-			(at 107.95 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3386P_Vertical"
-			(at 110.49 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Potentiometer"
-			(at 110.49 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ce452a4b-3dca-4f7c-b380-f11fc8d1e98d")
-		)
-		(pin "2"
-			(uuid "9e409eb8-f930-4f62-95db-f4917eb72345")
-		)
-		(pin "1"
-			(uuid "017053cb-49a4-4697-9183-c6a6ddc31db0")
-		)
-		(instances
-			(project ""
-				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
-					(reference "RV1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 257.81 90.17 0)
 		(unit 1)
@@ -4689,77 +4125,6 @@
 			(project ""
 				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 100.33 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2404b72-4fe0-4d31-bb2f-06f7bc7eaf49")
-		(property "Reference" "SW1"
-			(at 100.33 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 100.33 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
-			(at 100.33 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 100.33 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 100.33 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ceb6d5f8-f6fc-4e77-8b45-9438916d3eb0")
-		)
-		(pin "3"
-			(uuid "d7efb9e8-e3b5-47c0-9bd8-4ed59f6889e0")
-		)
-		(pin "1"
-			(uuid "4f96c830-d8e4-4e87-8a4a-8f73907d23d5")
-		)
-		(instances
-			(project ""
-				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
