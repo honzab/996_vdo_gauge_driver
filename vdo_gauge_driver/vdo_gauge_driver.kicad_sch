@@ -2021,7 +2021,7 @@
 	)
 	(text_box "Simple RC filter to smooth the PWM signal from the ATtiny85"
 		(exclude_from_sim no)
-		(at 194.31 63.5 0)
+		(at 179.07 62.23 0)
 		(size 19.05 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2092,12 +2092,6 @@
 		(uuid "13e1cbfb-b798-41ec-ac85-d94a47710b21")
 	)
 	(junction
-		(at 200.66 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "170f26cb-7675-4930-abd6-0e3c679ada37")
-	)
-	(junction
 		(at 29.21 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2116,6 +2110,12 @@
 		(uuid "46385ac4-d6f6-4ac4-8e2a-ae06b0468e50")
 	)
 	(junction
+		(at 200.66 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "475c7ad9-19fb-40d1-9138-358a99c1ac06")
+	)
+	(junction
 		(at 81.28 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2128,16 +2128,16 @@
 		(uuid "567f3119-bb99-4aab-883b-db291291071c")
 	)
 	(junction
+		(at 228.6 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ccf48fa-21bb-4a2c-b2c7-3ec49243daac")
+	)
+	(junction
 		(at 200.66 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6970b99e-ab84-46f1-a2d5-01b0195141c8")
-	)
-	(junction
-		(at 200.66 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f1961aa-65b6-4246-ad28-fdc76de0c2f7")
 	)
 	(junction
 		(at 43.18 66.04)
@@ -2156,6 +2156,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a27002b7-cc8b-4442-82cf-7c9b3fb70e7a")
+	)
+	(junction
+		(at 218.44 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a608d3e3-1ac3-4ff8-b86c-eed451c250ab")
 	)
 	(junction
 		(at 68.58 96.52)
@@ -2180,6 +2186,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f70510c6-6bcf-4952-b62a-d1ff446d0c2f")
+	)
+	(wire
+		(pts
+			(xy 245.11 82.55) (xy 233.68 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03018b62-42ab-4504-b7c3-a32d7dda4351")
 	)
 	(wire
 		(pts
@@ -2213,16 +2229,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 82.55) (xy 233.68 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29aa8290-443d-45ef-a59f-5b2437529726")
-	)
-	(wire
-		(pts
 			(xy 60.96 96.52) (xy 68.58 96.52)
 		)
 		(stroke
@@ -2230,6 +2236,16 @@
 			(type default)
 		)
 		(uuid "2c22b241-604c-4283-b95d-da14b12fb7f8")
+	)
+	(wire
+		(pts
+			(xy 218.44 83.82) (xy 218.44 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e84f6b4-65fe-4fd2-9859-35aa827b39b4")
 	)
 	(wire
 		(pts
@@ -2283,6 +2299,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 90.17) (xy 228.6 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dda962f-49bd-4a8e-ae40-a5e4cdc0e407")
+	)
+	(wire
+		(pts
 			(xy 127 104.14) (xy 149.86 104.14)
 		)
 		(stroke
@@ -2333,6 +2359,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 82.55) (xy 200.66 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82ecc08b-49a2-477d-9eae-32040a353755")
+	)
+	(wire
+		(pts
 			(xy 68.58 66.04) (xy 81.28 66.04)
 		)
 		(stroke
@@ -2350,16 +2386,6 @@
 			(type default)
 		)
 		(uuid "84565d39-02d9-4100-80ce-37317f1d2c5b")
-	)
-	(wire
-		(pts
-			(xy 200.66 90.17) (xy 228.6 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85efd41b-6617-47de-a4ff-a8d9fd750408")
 	)
 	(wire
 		(pts
@@ -2393,13 +2419,23 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 102.87) (xy 200.66 102.87)
+			(xy 252.73 102.87) (xy 218.44 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "918da147-046a-4bf4-a8e9-f734e5fbfc97")
+	)
+	(wire
+		(pts
+			(xy 218.44 102.87) (xy 200.66 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92d4ec1d-711c-4a2c-b150-db04cc90fe5f")
 	)
 	(wire
 		(pts
@@ -2413,6 +2449,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 68.58) (xy 229.87 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9780df46-30b5-419f-8a84-d07258940a3f")
+	)
+	(wire
+		(pts
 			(xy 53.34 96.52) (xy 60.96 96.52)
 		)
 		(stroke
@@ -2420,6 +2466,26 @@
 			(type default)
 		)
 		(uuid "9a31cb47-1275-4ba8-9ab0-ddb3c2af2003")
+	)
+	(wire
+		(pts
+			(xy 228.6 73.66) (xy 229.87 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b8dc62c-b8da-409a-8509-4dbe98507f42")
+	)
+	(wire
+		(pts
+			(xy 228.6 73.66) (xy 218.44 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c2814cd-05d9-48d4-9682-e39cf41ef77c")
 	)
 	(wire
 		(pts
@@ -2550,6 +2616,16 @@
 			(type default)
 		)
 		(uuid "bd2cd94b-2b78-4889-ac1e-2a004d439e4d")
+	)
+	(wire
+		(pts
+			(xy 218.44 73.66) (xy 218.44 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd8c61e2-5a54-4275-a48c-ef8c4b2b3cb3")
 	)
 	(wire
 		(pts
@@ -2691,6 +2767,16 @@
 		)
 		(uuid "fdaf37c9-a48f-42c9-9b19-7f2ddc55285b")
 	)
+	(wire
+		(pts
+			(xy 245.11 71.12) (xy 245.11 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdfa8ae0-4eff-42b5-b39d-418625986ff1")
+	)
 	(label "Drain"
 		(at 242.57 90.17 0)
 		(effects
@@ -2702,7 +2788,7 @@
 		(uuid "14a252f7-b8dc-4a8c-a603-3c9bca4e7272")
 	)
 	(label "Smoothed Signal Out {slash} Gate"
-		(at 203.2 82.55 0)
+		(at 200.66 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2770,6 +2856,76 @@
 			(justify left bottom)
 		)
 		(uuid "f2df5b1c-777e-496f-9824-2353ea2093c1")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 218.44 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1bec1e39-7f3f-4a6b-add6-24ebad5dd9cd")
+		(property "Reference" "R2"
+			(at 220.98 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22R"
+			(at 220.98 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 216.662 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63ff8e99-5694-4257-bbbe-82d741ce849a")
+		)
+		(pin "2"
+			(uuid "8a1e77b1-665a-4e56-b96e-d8ae42279c41")
+		)
+		(instances
+			(project ""
+				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Regulator_Linear:L7805")
@@ -3285,6 +3441,92 @@
 				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
 					(reference "#PWR05")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6002-xP")
+		(at 237.49 71.12 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58ced5eb-84f9-4ea9-b3f2-b63db76e79ca")
+		(property "Reference" "U2"
+			(at 237.49 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6002-xP"
+			(at 237.49 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 237.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-8"
+			(at 237.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "836a5782-61f8-455f-9368-c0df1d8140cf")
+		)
+		(pin "2"
+			(uuid "94b65bd2-d1d8-4cec-b580-6a6634801f5c")
+		)
+		(pin "7"
+			(uuid "5b655ab0-c98f-4596-b687-9d281701cb5d")
+		)
+		(pin "1"
+			(uuid "3455afa4-cd33-4e5f-9676-92580546680d")
+		)
+		(pin "8"
+			(uuid "71794b8c-b071-4146-8a9f-5c676375701c")
+		)
+		(pin "4"
+			(uuid "f965fba1-062a-46ec-b7b7-434a05031b25")
+		)
+		(pin "6"
+			(uuid "a7055c83-b86c-4425-94a9-20dbfc49d1bf")
+		)
+		(pin "5"
+			(uuid "5f38ca95-7af7-4b91-a06b-d9a398d3b292")
+		)
+		(instances
+			(project ""
+				(path "/5522c6c2-0190-4a1a-827d-62998a7dbe1c"
+					(reference "U2")
+					(unit 2)
 				)
 			)
 		)
