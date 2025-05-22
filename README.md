@@ -204,7 +204,7 @@ The original Ahsai's links to the connectors point to Mouser, but they are not a
 2. Contact; female; 0.63mm; tinned; 0.5÷0.75mm2; 20AWG÷18AWG; crimped
 
 * 5-963715-1 female [digikey.se](https://www.digikey.se/en/products/detail/te-connectivity-amp-connectors/5-963715-1/10478401)
-* 5-963716-1 male [digikey.se](https://www.digikey.se/en/products/detail/te-connectivity-amp-connectors/5-963715-1/10478401)
+* 5-963716-1 male [digikey.se](https://www.digikey.se/en/products/detail/te-connectivity-amp-connectors/5-963716-1/5437656)
 
 Potentially a crimping tool: https://www.amazon.se/iCrimp-Crimping-AWG28-20-Terminals-Connectors/dp/B078WNZ9FW/ref=asc_df_B078WNZ9FW?mcid=1af05a2f26a63e6584890cf14fcee144&tag=shpngadsglede-21&linkCode=df0&hvadid=719622306849&hvpos=&hvnetw=g&hvrand=17724259167483025586&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9217559&hvtargid=pla-527283798174&language=sv_SE&gad_source=1&th=1
 
