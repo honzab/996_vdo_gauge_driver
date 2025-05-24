@@ -58,7 +58,7 @@ The components in the original design are not available anymore, so we need to f
 For the voltage regulators, that's kind of easy. We can use
 
 * [L7805](datasheets/L78.pdf) for 5V
-* [L7812](datasheets/L78.pdf) for 12V
+* ~~[L7812](datasheets/L78.pdf) for 12V (turns out I don't need this one in the end)~~
 
 For the op-amp, the L727M is not available anymore. Moreover it is not rail-to-rail, which means that if the
 input drops all the way to 0V, the output will not be able to reach 0V. This is a problem since we need it to
