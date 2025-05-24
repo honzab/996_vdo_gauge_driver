@@ -10,6 +10,20 @@ the CAN bus so that it can be read by an OBD-II reader.
 People have developed different kind of solutions for this problem, but there was one that especially
 caught my eye, both because of the design but also reversibility and accuracy of the solution.
 
+## tl;dr
+There's been some hiccups on the way, but I have succeeded in building a prototype that can display temperature 
+values of my choosing. I have a code snippet that runs from 50ºC to 150ºC with a couple of seconds delay 
+between each value. The gauge shows the values.
+
+**I have NOT connected anything to the car yet!**
+
+![Prototype in May 2025](images/prototype_20250524_small.gif)
+
+![A first version of the PCB](images/pcb_20250524.jpg)
+
+* [Schematics](vdo_gauge_driver/vdo_gauge_driver_rev0.2.pdf)
+* [Code for ATTiny85](vdo_gauge_driver.ino)
+
 ## Ahsai's design from 2014
 
 Back in 2014, [Ahsai](https://rennlist.com/forums/members/32590-ahsai.html)
@@ -23,6 +37,8 @@ Ahsai chose to use the VDO gauge, which fits the design of the interior pretty w
 ## Trying to build it in 2025
 
 In April 2025 I decided to try to build it as well.
+
+### Introduction
 
 I looked at the original schematics, but some of the components have already been replaced by newer ones. This meant 
 that I would need to redo the schematics, look at all the datasheets and find replacement components.
@@ -70,7 +86,7 @@ Right now, I am not really sure how it could ever have worked for Ahsai.
 
 **Solution**: Use a MOSFET to simulate the resistance. I've picked the [2N7000](datasheets/2N7000.pdf) for this.
 
-![Only MOSFET solution](just_use_2N7000.png)
+![Only MOSFET solution](images/just_use_2N7000.png)
 
 ### Problem 3, the MOSFET is not linear and precise enough
 
@@ -84,7 +100,7 @@ on where the needle was moving from.
 **Solution**: After a bit of research, it turns out that I could use a current sink with the one op-amp that I have left from the MCP6002.
 It was a bit tricky to figure out what the resistor value should be between the source and ground.
 
-![Current sink](current_sink.png)
+![Current sink](images/current_sink.png)
 
 #### Problem 3.1, the gauges internal resistance
 
@@ -131,6 +147,11 @@ With R of 22Ω we get these with the different voltages:
 This is not really exactly what we need, but it is good enough for now. The 5V input would be anyways going over what
 the MOSFET can do.
 
+#### Problem 3.3, the op-amp used cannot drive so much current
+
+The MCP6002 op-amp cannot drive as much current as we need. Luckily though, it seems to be able to run the gauge's
+pointer all the way to 140ºC, which is good enough for me (for now at least).
+
 ### Getting to what value is what
 
 In the original design, Ahsai used Durametric software to get the temperature values (in F) and mapped them to the
@@ -147,8 +168,9 @@ R^2 = 0.9997
 ```
 
 We can then use this information to build the table of values in Celsius, using a simple [python script](engine_sensor_voltage_temperature.py).
+(run `brew install gnuplot` (MacOS) if you don't have it already).
 
-![plot](engine_sensor_voltage_temperature.png)
+![plot](images/engine_sensor_voltage_temperature.png)
 
 | voltage   | °C       | F       |
 |-----------|----------|---------|
@@ -157,31 +179,14 @@ We can then use this information to build the table of values in Celsius, using 
 | 2.70V     | 35.90°C  | 96.62F  |
 | 2.60V     | 36.17°C  | 97.11F  |
 | 2.50V     | 36.95°C  | 98.50F  |
-| 2.40V     | 38.14°C  | 100.65F |
-| 2.30V     | 39.66°C  | 103.39F |
-| 2.20V     | 41.45°C  | 106.61F |
-| 2.10V     | 43.44°C  | 110.20F |
-| 2.00V     | 45.59°C  | 114.06F |
-| 1.90V     | 47.85°C  | 118.14F |
-| 1.80V     | 50.21°C  | 122.38F |
-| 1.70V     | 52.65°C  | 126.77F |
-| 1.60V     | 55.17°C  | 131.30F |
-| 1.50V     | 57.77°C  | 135.99F |
-| 1.40V     | 60.48°C  | 140.87F |
-| 1.30V     | 63.33°C  | 146.00F |
-| 1.20V     | 66.37°C  | 151.46F |
-| 1.10V     | 69.64°C  | 157.35F |
-| 1.00V     | 73.22°C  | 163.79F |
-| 0.90V     | 77.18°C  | 170.92F |
-| 0.80V     | 81.61°C  | 178.89F |
-| 0.70V     | 86.61°C  | 187.89F |
-| 0.60V     | 92.29°C  | 198.12F |
-| 0.50V     | 98.78°C  | 209.81F |
+| ...        | ...      | ...     |
 | 0.40V     | 106.22°C | 223.19F |
 | 0.30V     | 114.74°C | 238.53F |
 | 0.20V     | 124.51°C | 256.11F |
 | 0.10V     | 135.69°C | 276.24F |
 | 0.00V     | 148.47°C | 299.24F |
+
+_(I've shortened the table, all the values can be obtained by running the script.)_
 
 ### What's needed
 
@@ -189,7 +194,7 @@ TODO: add list of components
 
 #### Mounting
 
-Could this be something? https://www.amazon.com/dp/B0018ALWOE/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B0018ALWOE&pd_rd_w=7b38W&content-id=amzn1.sym.7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_p=7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_r=N8RSV7SSJCJFGKZRW0Q5&pd_rd_wg=nYLRA&pd_rd_r=9f5e788e-8383-43bf-b18c-378f6cef02c4&s=electronics&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw
+TODO: Could [this be something](https://www.amazon.com/dp/B0018ALWOE/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B0018ALWOE&pd_rd_w=7b38W&content-id=amzn1.sym.7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_p=7446a9d1-25fe-4460-b135-a60336bad2c9&pf_rd_r=N8RSV7SSJCJFGKZRW0Q5&pd_rd_wg=nYLRA&pd_rd_r=9f5e788e-8383-43bf-b18c-378f6cef02c4&s=electronics&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw)?
 
 #### The DME connectors research
 
@@ -206,9 +211,9 @@ The original Ahsai's links to the connectors point to Mouser, but they are not a
 * 5-963715-1 female [digikey.se](https://www.digikey.se/en/products/detail/te-connectivity-amp-connectors/5-963715-1/10478401)
 * 5-963716-1 male [digikey.se](https://www.digikey.se/en/products/detail/te-connectivity-amp-connectors/5-963716-1/5437656)
 
-Potentially a crimping tool: https://www.amazon.se/iCrimp-Crimping-AWG28-20-Terminals-Connectors/dp/B078WNZ9FW/ref=asc_df_B078WNZ9FW?mcid=1af05a2f26a63e6584890cf14fcee144&tag=shpngadsglede-21&linkCode=df0&hvadid=719622306849&hvpos=&hvnetw=g&hvrand=17724259167483025586&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9217559&hvtargid=pla-527283798174&language=sv_SE&gad_source=1&th=1
+Potentially [a crimping tool from Amazon](https://www.amazon.se/iCrimp-Crimping-AWG28-20-Terminals-Connectors/dp/B078WNZ9FW/ref=asc_df_B078WNZ9FW?mcid=1af05a2f26a63e6584890cf14fcee144&tag=shpngadsglede-21&linkCode=df0&hvadid=719622306849&hvpos=&hvnetw=g&hvrand=17724259167483025586&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9217559&hvtargid=pla-527283798174&language=sv_SE&gad_source=1&th=1).
 
-### Prepping Arduino IDE
+### Prepping the Arduino IDE
 
 Add this to Preferences / Additional Boards Manager URLs:
 
@@ -218,13 +223,16 @@ https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/packa
 
 Then Choose:
 
-* Tools > Board > attiny > ATtiny25/45/85
-* Tools > Clock > 8 MHz (internal)
-* Tools > Processor > ATtiny85
-* Tools > Programmer > USBtinyISP
+* Tools > Board > attiny > `ATtiny25/45/85`
+* Tools > Clock > `8 MHz (internal)`
+* Tools > Processor > `ATtiny85`
+* Tools > Programmer > `USBtinyISP`
 
 Then do `Tools > Burn Bootloader`.
 
 ### Uploading your code
+
+> [!NOTE]
+> For any new chip that you are programming, you need to burn the bootloader first!
 
 Write your code, compile with `Sketch > Verify/Compile` and upload with `Sketch > Upload`.

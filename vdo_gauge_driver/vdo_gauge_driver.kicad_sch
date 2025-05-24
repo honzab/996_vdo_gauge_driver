@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "VDO Vision Oil Tempearature Gauge Driver")
-		(date "2025-05-04")
-		(rev "0.1")
+		(date "2025-05-24")
+		(rev "0.2")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:MCP6002-xP"
@@ -2038,26 +2038,6 @@
 			(justify left top)
 		)
 		(uuid "23eb750d-25f3-48ab-bd20-81ac346c82fd")
-	)
-	(text_box "Consider adding a local decoupling capacitor close to the op-amp's Vdd and GND pins, even if there is already a capacitor decoupling the voltage regulator."
-		(exclude_from_sim no)
-		(at 179.07 167.64 0)
-		(size 38.1 12.7)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "53b63028-f4c1-4901-98ed-f1d855d038d7")
 	)
 	(text_box "The high impedance of the op-amp (in 1:1 ratio) makes it so that this is not going to draw any significant current from the ECU signal wire"
 		(exclude_from_sim no)
@@ -4177,7 +4157,7 @@
 				)
 			)
 		)
-		(property "Value" "2N7000"
+		(property "Value" "BS170"
 			(at 233.68 96.52 90)
 			(effects
 				(font

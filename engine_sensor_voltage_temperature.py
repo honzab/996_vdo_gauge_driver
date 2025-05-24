@@ -26,7 +26,7 @@ def plot_data(filename: str):
     )
     gnuplot_command = f"""
 reset
-set terminal png enhanced font 'Verdana,11'
+set terminal png enhanced font 'Verdana,11' size 500,300
 set output 'engine_sensor_voltage_temperature.png'
 set title "Engine Sensor Voltage vs Temperature"
 set ylabel 'Temp [°C]'
