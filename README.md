@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is about building an oil temperature gauge for a Porsche 996/996.
+This project is about building an oil temperature gauge for a Porsche 911/996.
 
 The car does not have a temperature gauge from the factory and neither does it expose the information on 
 the CAN bus so that it can be read by an OBD-II reader.
@@ -43,7 +43,7 @@ In April 2025 I decided to try to build it as well.
 I looked at the original schematics, but some of the components have already been replaced by newer ones. This meant 
 that I would need to redo the schematics, look at all the datasheets and find replacement components.
 
-[Ahsai's Original Schematics](ExpressSCH-page-0.jpg)
+[Ahsai's Original Schematics](images/ExpressSCH-page-0.jpg)
 
 The circuit itself is fairly simple and smart. It uses an ATTiny85 to convert the voltage from the sensor to a voltage
 that drives the VDO gauge.
@@ -160,7 +160,7 @@ voltage observed on the sensor wire.
 > [!NOTE]
 > I would like to maybe borrow someone's Durametric and check myself. But as of now (May 2025), I trust this data.
 
-[Ahsai's original values](Drawing1.jpg), with the polynomial approximated (in F):
+[Ahsai's original values](images/Drawing1.jpg), with the polynomial approximated (in F):
 
 ```
 y = 8.5645 * x^4 - 59.284 * x^3 + 160.76 * x^2 - 245.49x + 299.24
