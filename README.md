@@ -21,8 +21,8 @@ between each value. The gauge shows the values.
 
 ![A first version of the PCB](images/pcb_20250524.jpg)
 
-* [Schematics](vdo_gauge_driver/vdo_gauge_driver_rev0.2.pdf)
-* [Code for ATTiny85](vdo_gauge_driver.ino)
+* [Schematics](vdo_gauge_driver_schematics/vdo_gauge_driver_rev0.2.pdf)
+* [Code for ATTiny85](vdo_gauge_driver_sw/vdo_gauge_driver.ino)
 
 ## Ahsai's design from 2014
 
@@ -102,7 +102,7 @@ It was a bit tricky to figure out what the resistor value should be between the 
 
 ![Current sink](images/current_sink.png)
 
-#### Problem 3.1, the gauges internal resistance
+#### Problem 3.1, the gauge's internal resistance
 
 Most likely the gauge has some internal resistance and is applying certain voltage on the sensor wire, measuring the voltage drop.
 
