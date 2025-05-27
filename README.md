@@ -200,13 +200,12 @@ TODO: Could [this be something](https://www.amazon.com/dp/B0018ALWOE/ref=sspa_dk
 
 The original Ahsai's links to the connectors point to Mouser, but they are not available anymore.
 
-| type   | old part number | width           | style              | new part number |
-|--------|-----------------|-----------------|--------------------|-----------------|
-| female | 963729-1        | n/a             | Micro Quadlock MQS | 5-963715-1      |
-| male   | 963730-1        | pin 0.63x0.63mm | Micro Quadlock MQS | 5-963716-1      |
+I think that these should do it, but the only way to know is to order some and try them out.
 
-1. Contact; male; 0.63mm; tinned; 0.2÷0.35mm2; 24AWG÷22AWG; crimped
-2. Contact; female; 0.63mm; tinned; 0.5÷0.75mm2; 20AWG÷18AWG; crimped
+| type   | old part number | width           | style              | new part number | copied description                                        |
+|--------|-----------------|-----------------|--------------------|-----------------|-----------------------------------------------------------|
+| male   | 963730-1        | pin 0.63x0.63mm | Micro Quadlock MQS | 5-963716-1      | male; 0.63mm; tinned; 0.2÷0.35mm2; 24AWG÷22AWG; crimped   |
+| female | 963729-1        | n/a             | Micro Quadlock MQS | 5-963715-1      | female; 0.63mm; tinned; 0.5÷0.75mm2; 20AWG÷18AWG; crimped |
 
 * 5-963715-1 female [digikey.se](https://www.digikey.se/en/products/detail/te-connectivity-amp-connectors/5-963715-1/10478401)
 * 5-963716-1 male [digikey.se](https://www.digikey.se/en/products/detail/te-connectivity-amp-connectors/5-963716-1/5437656)
