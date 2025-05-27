@@ -1,3 +1,4 @@
 vdo_gauge_driver_schematics/vdo_gauge_driver-backups/*
+vdo_gauge_driver_software/test/test_cpp
 .DS_Store
 *.lck
