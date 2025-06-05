@@ -220,6 +220,8 @@ Add this to Preferences / Additional Boards Manager URLs:
 https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
 ```
 
+Then go to Boards Manager, search for `attiny` and install it.
+
 Then Choose:
 
 * Tools > Board > attiny > `ATtiny25/45/85`
@@ -229,7 +231,10 @@ Then Choose:
 
 Then do `Tools > Burn Bootloader`.
 
-### Uploading your code
+### Compiling and uploading your code
+
+> [!NOTE]
+> If you get error compiling on an Apple silicon Mac (like this `bad CPU type in executableCompilation`), run `softwareupdate --install-rosetta`
 
 > [!NOTE]
 > For any new chip that you are programming, you need to burn the bootloader first!
