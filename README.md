@@ -19,7 +19,7 @@ between each value. The gauge shows the values.
 
 ![Prototype in May 2025](images/prototype_20250524_small.gif)
 
-![A first version of the PCB](images/pcb_20250524.jpg)
+![A first version of the PCB](images/pcb_20250527.jpg)
 
 * [Schematics](vdo_gauge_driver_schematics/vdo_gauge_driver_rev0.2.pdf)
 * [Code for ATTiny85](vdo_gauge_driver_software/vdo_gauge_driver_software.ino)
